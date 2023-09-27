@@ -6,51 +6,80 @@
     <title>CSS Loading Animation</title>
     <style>
       .line1{
-        margin-top: 0px;
-        display: inline-block;
-        scale: 200%;
-        position: absolute;
-        overflow: hidden;
-        animation: slide 10s linear 0s infinite;
+        animation: slide 6s linear 0s infinite;
       }
       .line2{
-        scale:200%;
-        animation: slide2 10s linear 0s infinite;
+        animation: slide2 6s linear 0s infinite;
       }
       .line3{
-        scale:200%;
-        top: 0;
-        left: 0;
-        animation: slide2 10s linear 0s infinite;
+        animation: slide3 6s linear 0s infinite;
+      }
+      .line4{
+        animation: slide4 6s linear 0s infinite;
+      }
+      .line5{
+        animation: slide5 6s linear 0s infinite;
+      }
+      .line6{
+        animation: slide6 6s linear 0s infinite;
       }
       @keyframes slide{
-        from {transform: translateX(0);}
-        to {transform: translateX(500px);}
+        from {transform: translateX(-500px);}
+        to {transform:translateX(0px);}
       }
       @keyframes slide2{
-        from {transform:translateY(-100px) translateX(0);}
-        to {transform: translateY(-100px) translateX(-500px);}
+        from {transform:translateX(0px);}
+        to {transform:translateX(-500px);}
       }
       @keyframes slide3{
-        from {transform:translateY(0px) translateX(0);}
-        to {transform:translateY(1000px)  translateX(-500px);}
+        from {transform:translateX(-500px);}
+        to {transform:translateX(0px);}
       }
-   
+      @keyframes slide4{
+        from {transform:translateX(0px);}
+        to {transform:translateX(-500px);}
+      }
+      @keyframes slide5{
+        from {transform: translateX(-500px);}
+        to {transform: translateX(0px);}
+      }
+      @keyframes slide6{
+        from {transform:translateX(0px);}
+        to {transform:translateX(-500px);}
+      }
     </style>
   </head>
   <body>
-    <h1>CSS Loading Animation</h1>
     <div class="line1">
-      <img src="Logo.svg" alt="hi" width="2000" height="1000"/>
-    </div>
-    </div>
+      <img src="8logos.svg" width="200%" height="auto"/>
+    </div> 
+  </div>
     <div class="line2">
-      <img src="Logo.svg" alt="hi" width="2000" height="1000"/>
-    </div>
-    </div>
+      <img src="8logos.svg" width="200%" height="auto"/>
+    </div> 
+  </div>
     <div class="line3">
-      <img src="Logo.svg" alt="hi" width="2000" height="1000"/>
+      <img src="8logos.svg" width="200%" height="auto"/>
     </div>
     </div>
+  </div>
+    <div class="line4">
+      <img src="8logos.svg" width="200%" height="auto"/>
+    </div>
+    </div>
+  </div>
+    <div class="line5">
+      <img src="8logos.svg" width="200%" height="auto"/>
+    </div>
+    </div>
+  </div>
+  <div class="line6">
+    <img src="8logos.svg" width="200%" height="auto"/>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  </div>
   </body>
 </html> 
