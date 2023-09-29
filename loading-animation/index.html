@@ -6,6 +6,8 @@
     <title>CSS Loading Animation</title>
     <style>
       .logo{
+        translate: 400px;
+        margin: auto;
         animation: 
           fade-in 1s backwards ease-in 7s 1,
           up 1s forwards ease-in 7s 1;
@@ -78,8 +80,8 @@
         100% {opacity: 1;} 
       } 
       @keyframes up {
-        from{transform: scale(20%) translateY(-800px)}
-        to {transform: scale(100%) translateY(-850px)}
+        from{transform: translateY(-800px)}
+        to {transform:  translateY(-850px)}
       }
     </style>
   </head>
@@ -114,7 +116,7 @@
       </div>
 
       <div class="logo">
-        <img src="Logo.svg" width="100%" height="auto"/>
+        <img src="Logo.svg" width="50%" height="auto"/>
       </div>
     
   </body>
