@@ -5,81 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Loading Animation</title>
     <style>
+      .logo{
+        animation: 
+          fade-in 1s backwards ease-in 7s 1,
+          up 1s forwards ease-in 7s 1;
+          
+      }
       .line1{
-        animation: slide 6s linear 0s infinite;
+        animation: 
+          slide 1s ease-out 0s 1,
+          fade-out 1s forwards ease-out 6s 1;
       }
       .line2{
-        animation: slide2 6s linear 0s infinite;
+        animation: 
+          slide2 1s ease-out 0s 2,
+          fade-out 1s forwards ease-out 6s 1;
+       
       }
       .line3{
-        animation: slide3 6s linear 0s infinite;
+        animation: 
+          slide3 1s ease-out 0s 3,
+          fade-out 1s forwards ease-out 6s 1;
+        
       }
       .line4{
-        animation: slide4 6s linear 0s infinite;
+        animation: 
+          slide4 1s ease-out 0s 4,
+          fade-out 1s forwards ease-out 6s 1;
       }
       .line5{
-        animation: slide5 6s linear 0s infinite;
+        animation: 
+          slide5 1s ease-out 0s 5,
+          fade-out 1s forwards ease-out 6s 1;
+        
       }
       .line6{
-        animation: slide6 6s linear 0s infinite;
+        animation: 
+          slide6 1s ease-out 0s 6,
+          fade-out 1s forwards ease-out 6s 1;
+        
       }
       @keyframes slide{
         from {transform: translateX(-500px);}
         to {transform:translateX(0px);}
       }
       @keyframes slide2{
-        from {transform:translateX(0px);}
-        to {transform:translateX(-500px);}
+        from {transform:translateX(-250px);}
+        to {transform:translateX(-750px);}
       }
       @keyframes slide3{
         from {transform:translateX(-500px);}
         to {transform:translateX(0px);}
       }
       @keyframes slide4{
-        from {transform:translateX(0px);}
-        to {transform:translateX(-500px);}
+        from {transform:translateX(-250px);}
+        to {transform:translateX(-750px);}
       }
       @keyframes slide5{
         from {transform: translateX(-500px);}
         to {transform: translateX(0px);}
       }
       @keyframes slide6{
-        from {transform:translateX(0px);}
-        to {transform:translateX(-500px);}
+        from {transform:translateX(-250px);}
+        to {transform:translateX(-750px);}
+      }
+      @keyframes fade-out {
+        0% {opacity: 1;}
+        100% {opacity: 0;} 
+      } 
+      @keyframes fade-in {
+        0% {opacity: 0;}
+        100% {opacity: 1;} 
+      } 
+      @keyframes up {
+        from{transform: scale(20%) translateY(-800px)}
+        to {transform: scale(100%) translateY(-850px)}
       }
     </style>
   </head>
   <body>
-    <div class="line1">
-      <img src="8logos.svg" width="200%" height="auto"/>
-    </div> 
-  </div>
-    <div class="line2">
-      <img src="8logos.svg" width="200%" height="auto"/>
-    </div> 
-  </div>
-    <div class="line3">
-      <img src="8logos.svg" width="200%" height="auto"/>
-    </div>
-    </div>
-  </div>
-    <div class="line4">
-      <img src="8logos.svg" width="200%" height="auto"/>
-    </div>
-    </div>
-  </div>
-    <div class="line5">
-      <img src="8logos.svg" width="200%" height="auto"/>
-    </div>
-    </div>
-  </div>
-  <div class="line6">
-    <img src="8logos.svg" width="200%" height="auto"/>
-  </div>
-  </div>
-  </div>
+      
+      
+      <div class="line1">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div> 
+
+      <div class="line2">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div> 
+    
+
+      <div class="line3">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div>
+    
+      <div class="line4">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div>
+    
   
-  </div>
-  </div>
+      <div class="line5">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div>
+    
+
+      <div class="line6">
+        <img src="8logos.svg" width="200%" height="auto"/>
+      </div>
+
+      <div class="logo">
+        <img src="Logo.svg" width="100%" height="auto"/>
+      </div>
+    
   </body>
 </html> 
