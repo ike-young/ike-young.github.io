@@ -6,12 +6,15 @@
     <title>CSS Loading Animation</title>
     <style>
       .logo{
-        translate: 400px;
-        margin: auto;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
         animation: 
           fade-in 1s backwards ease-in 7s 1,
-          up 1s forwards ease-in 7s 1;
-          
+          up 1s forwards ease-in 7s 1,
+          fade-out 1s forwards ease-out 9s 1;
       }
       .line1{
         animation: 
@@ -22,13 +25,11 @@
         animation: 
           slide2 1s ease-out 0s 2,
           fade-out 1s forwards ease-out 6s 1;
-       
       }
       .line3{
         animation: 
           slide3 1s ease-out 0s 3,
           fade-out 1s forwards ease-out 6s 1;
-        
       }
       .line4{
         animation: 
@@ -39,37 +40,35 @@
         animation: 
           slide5 1s ease-out 0s 5,
           fade-out 1s forwards ease-out 6s 1;
-        
       }
       .line6{
         animation: 
           slide6 1s ease-out 0s 6,
           fade-out 1s forwards ease-out 6s 1;
-        
       }
       @keyframes slide{
-        from {transform: translateX(-500px);}
-        to {transform:translateX(0px);}
+        from {transform: translateX(-100%);}
+        to {transform:translateX(0%);}
       }
       @keyframes slide2{
-        from {transform:translateX(-250px);}
-        to {transform:translateX(-750px);}
+        from {transform:translateX(0%);}
+        to {transform:translateX(-100%);}
       }
       @keyframes slide3{
-        from {transform:translateX(-500px);}
-        to {transform:translateX(0px);}
+        from {transform:translateX(-100%);}
+        to {transform:translateX(0%);}
       }
       @keyframes slide4{
-        from {transform:translateX(-250px);}
-        to {transform:translateX(-750px);}
+        from {transform:translateX(0%);}
+        to {transform:translateX(-100%);}
       }
       @keyframes slide5{
-        from {transform: translateX(-500px);}
-        to {transform: translateX(0px);}
+        from {transform: translateX(-100%);}
+        to {transform: translateX(0%);}
       }
       @keyframes slide6{
-        from {transform:translateX(-250px);}
-        to {transform:translateX(-750px);}
+        from {transform:translateX(0%);}
+        to {transform:translateX(-100%);}
       }
       @keyframes fade-out {
         0% {opacity: 1;}
@@ -80,14 +79,12 @@
         100% {opacity: 1;} 
       } 
       @keyframes up {
-        from{transform: translateY(-800px)}
-        to {transform:  translateY(-850px)}
+        from{transform: translateY(-100%)}
+        to {transform:  translateY(100%)}
       }
-    </style>
+  </style>
   </head>
   <body>
-      
-      
       <div class="line1">
         <img src="8logos.svg" width="200%" height="auto"/>
       </div> 
@@ -118,6 +115,5 @@
       <div class="logo">
         <img src="Logo.svg" width="50%" height="auto"/>
       </div>
-    
   </body>
 </html> 
